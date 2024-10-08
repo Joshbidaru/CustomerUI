@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voucher</title>
+    <link rel="icon" type="image/x-icon" href="img/logo/image-removebg-preview (2).png">
+    <!-- SOURCES -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="css/Gallery.css" rel="stylesheet">
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!-- END OF FONTS -->
+    
+    <!--NAVBAR-->
+    <nav class="navbar navbar-expand-lg navbar bg-white">
+      <div class="container justify-content-center">
+        <img src="img/logo/image-removebg-preview (2).png" class="navbar-brand" href="Homepage.html" style="width: 3%; margin-right: 50px;">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse flex-grow-0" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="Homepage.html" style="margin-right: 30px; color: #343434;">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="margin-right: 30px; color: #343434;">
+                Products
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Rent</a></li>
+                <li><a class="dropdown-item" href="#">Purchase</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" style="margin-right: 30px; color: #343434;">Build a PC</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Services.html" style="margin-right: 30px; color: #343434;">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Faq.html" style="margin-right: 30px; color: #343434;">FAQ</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Contact.html" style="margin-right: 30px; color: #343434;">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="About.html" style="margin-right: 30px; color: #343434;">About</a>
+            </li>
+           
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </head>
+</head>
+<body class="bg-light">
+    <div class="card mb-3 mt-5" style="max-width: 1600px; margin-left: 150px;">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="img/RENT PRODUCT IMG/laptop1.png" class="img-fluid rounded-start" alt="...">
+              <!-- a link that triggers modal -->
+            <a href="#myModal" type="" class="Gallery" data-bs-toggle="modal" data-bs-target="#myModal"><img src="img/Voucher/samsung.jpg"></a>
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h1 class="card-title">Samsung Chromebook Plus</h1>
+              <h3 class="card-title">SPECIFICATIONS:</h3>
+              <p class="card-text" style="margin-top: 50px;"><span style="font-weight: bold;">PROCESSOR: </span>Hexa-core processor</p>
+              <p class="card-text"><span style="font-weight: bold;">DISPLAY: </span>12.3" LED Display (2400 x 1600)</p>
+              <p class="card-text"><span style="font-weight: bold;">OS: </span>WINDOWS 11 PRO</p>
+              <p class="card-text"><span style="font-weight: bold;">STORAGE: </span>512GB M.2 NVME SSD</p>
+              <p class="card-text"><span style="font-weight: bold;">MEMORY: </span>32GB RAM</p>
+              <p class="card-text"><span style="font-weight: bold;">ADD ONS: </span>BUILT IN PEN</p>
+
+              <h4 style="color: #0064AC; font-weight: bold;" class="mt-5">₱ 2,999 Down Payment / <small style="color: #0064AC;">₱ 1,099 Monthly</small></h4> 
+
+              <a href="RentInput.html" class="btn btn-primary mt-5" style="padding: 8px 40px;">Rent Now</a>
+
+            </div>
+          </div>
+        </div>
+      </div>
+<!-- MODAL POP UP -->
+<div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <!--        include image here-->
+        <img src="img/Voucher/samsung.jpg" alt="Image Title" class="img-fluid">
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- INFO TAB -->
+
+<div class="container mb-5 bg-white rounded">
+  <div class="wrapper">
+    <h5 class="Heading" href="#">Top Picks from Shop</h5>
+  </div>
+<div class="row">
+  <div class="col-md-4">
+    <div class="thumbnail">
+      <a href="RentProducts.html">
+        <img src="img/RENT PRODUCT IMG/laptop3.png" alt="Lights" style="width:100%">
+      </a>
+      <p style="text-wrap: wrap; text-align: center;">​Lenovo thinkPad T470 LAPTOP (i5-7Gen) 14" FHD(1920x1080) Laptop</p>
+ 
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="thumbnail">
+      <a href="RentProducts.html">
+        <img src="img/RENT PRODUCT IMG/Monitor/m2.png" alt="Nature" style="width:100%">
+      </a>
+      <p style="text-wrap: wrap; text-align: center;">Viewsonic Monitor 22inch FHD IPS Monitor Home and Office</p>
+ 
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="thumbnail">
+      <a href="RentProducts.html">
+        <img src="img/RENT PRODUCT IMG/SET/set3.png" alt="Fjords" style="width:100%">
+      </a>
+
+          <p style="text-wrap: wrap; text-align: center;">LENOVO Thinkcentre M800 SET i5-6Gen</p>
+ 
+    </div>
+  </div>
+</div>
+</div>
+      <!-- CDN JS -->
+       <script src="Js/search.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
