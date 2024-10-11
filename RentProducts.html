@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rental Equipment</title>
+    <!-- SOURCES -->
+    <link rel="icon" type="image/x-icon" href="img/logo/image-removebg-preview (2).png">
+    <link href="css/Rent.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto|Oswald:300,400">
+    <link rel="stylesheet" href="css/card.css">
+    <link rel="stylesheet" href="css/Homestyle.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <script src="Js/search.js"></script>
+    
+    <style>
+    .carousel {
+        margin: 30px 0;
+        background: #ccc;
+          position: relative;
+        box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    }
+    .carousel:after {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        box-shadow: 0 0 20px rgba(0,0,0,0.8);
+        height: 60px;
+        bottom: 0px;
+        left: 10px;
+        right: 10px;
+        border-radius: 100px / 20px;
+    }
+    .carousel .item {
+        text-align: center;
+        overflow: hidden;
+        height: 475px;
+    }
+    .carousel .item img {
+        max-width: 100%;
+        margin: 0 auto; /* Align slide image horizontally center in Bootstrap v3 */
+    }
+    .carousel .carousel-control {
+        width: 50px;
+        height: 50px;
+        background: #000;
+        margin: auto 0;
+        opacity: 0.8;
+    }
+    .carousel .carousel-control:hover {
+        opacity: 0.9;
+    }
+    .carousel .carousel-control i {
+        font-size: 41px;
+    }
+    .carousel-caption h3, .carousel-caption p {
+        color: #fff;
+        display: inline-block;
+        font-family: 'Oswald', sans-serif;
+        text-shadow: none;
+        margin-bottom: 20px;
+    }
+    .carousel-caption h3 {
+        background: rgba(0,0,0,0.9);
+        padding: 12px 24px;
+        font-size: 40px;	
+        text-transform: uppercase;
+    }
+    .carousel-caption p {
+        background: #8fc93c;
+        padding: 10px 20px;
+        font-size: 20px;
+        font-weight: 300;
+    }
+    .carousel-action {
+        padding: 10px 0 30px;
+    }
+    .carousel-action .btn {
+        min-height: 34px;
+        border-radius: 0;
+        margin: 3px;
+        min-width: 150px;
+        text-transform: uppercase;
+        font-family: 'Oswald', sans-serif;
+    }
+    .carousel-action .btn-primary {
+        border-color: #000;
+        background: none;
+        color: #000;
+    }
+    .carousel-action .btn-primary:hover {
+        background: #000;
+        color: #fff;
+    }
+    .carousel-action .btn-success {
+        background: #8fc93c;
+        border: none;
+    }
+    .carousel-action .btn-success:hover {
+        background: #87bd35;
+    }
+    .carousel-indicators li, .carousel-indicators li.active {
+        width: 11px;
+        height: 11px;
+        border-radius: 50%;
+        margin: 1px 6px;
+    }
+    .carousel-indicators li {
+        background: transparent;
+        border: 1px solid #fff;
+    }
+    .carousel-indicators li.active {
+        background: #8fc93c;
+        border-color: #8fc93c;
+    }
+    </style>
+     <!-- SOURCES -->
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!-- END OF FONTS -->
+    
+    <!--NAVBAR-->
+    <nav class="navbar navbar-expand-lg navbar bg-white">
+      <div class="container justify-content-center">
+        <img src="img/logo/image-removebg-preview (2).png" class="navbar-brand" href="Homepage.html" style="width: 3%; margin-right: 50px;">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse flex-grow-0" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="Homepage.html" style="margin-right: 30px; color: #343434;">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="margin-right: 30px; color: #343434;">
+                Products
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Rent</a></li>
+                <li><a class="dropdown-item" href="#">Purchase</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" style="margin-right: 30px; color: #343434;">Build a PC</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Services.html" style="margin-right: 30px; color: #343434;">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Faq.html" style="margin-right: 30px; color: #343434;">FAQ</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Contact.html" style="margin-right: 30px; color: #343434;">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="About.html" style="margin-right: 30px; color: #343434;">About</a>
+            </li>
+           
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </head>
+    </head>
+    <body class="bg-light">
+
+    <div class="container-lg">
+        <div class="row">
+            <div class="col-md-12">
+                <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                    <!-- Carousel indicators -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#myCarousel" data-slide-to="1"></li>
+                    </ol>   
+                    <!-- Wrapper for carousel items -->
+                    <div class="carousel-inner">	
+                        <div class="carousel-item active">
+                            <img src="img/Carousel Images/4.png" class="img-fluid" alt="Tablet">
+                            <div class="carousel-caption">
+                                <div class="carousel-action">
+                                    <a href="#" class="btn btn-info">Try Now</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/Carousel Images/3.png" class="img-fluid" alt="Workstation">
+                            <div class="carousel-caption">
+                                <div class="carousel-action">
+                                    <a href="#" class="btn btn-info">Try Now</a>
+                                </div>
+                            </div>
+                        </div>	
+                    </div>
+                    <!-- Carousel controls -->
+                    <a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                    <a class="carousel-control-next" href="#myCarousel" data-slide="next">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                </div>
+            </div>
+
+
+          <!-- End of Carousel -->
+
+          <form class="d-flex">
+            <input class="form-control me-2" id="myInput" type="search" placeholder="Search" aria-label="Search" onkeyup="search()">
+            <button class="btn btn-primary" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+
+      <!-- Search INPUT -->
+
+      <!-- Card Boostrap 5 -->
+        <div class="container border bg-white rounded" style="margin-top: 50px; margin-bottom: 100px;">
+            <h2 style="margin-bottom: 40px; margin-top: 20px;">RENTECH PRODUCT FOR RENT</h2>
+            <div class="row mb-5">
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="img/RENT PRODUCT IMG/laptop1.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Samsung Chromebook Plus Laptop</h5>
+                            <p class="card-text">12.2" Touchscreen 520QAB-K04</p>
+                            <div>
+                                <ul class="list-group">
+                                    <li class="list-group-item active">₱ 2,999 Down Payment</li>
+                                    <li class="list-group-item">₱ 1,099 Per Month</li>
+                                </ul>
+                            </div>
+                            <a href="Voucher.html" class="btn btn-primary btn-block" style="margin-top: 40px ;"><span>See Details</span></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="img/RENT PRODUCT IMG/laptop3.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">​Lenovo thinkPad T470 LAPTOP</h5>
+                            <p class="card-text">(i5-7Gen) 14" FHD(1920x1080) Laptop</p>
+                            <div>
+                                <ul class="list-group">
+                                    <li class="list-group-item active">₱ 2,999 Down Payment</li>
+                                    <li class="list-group-item">₱ 1,099 Per Month</li>
+                                </ul>
+                            </div>
+                            <a href="Voucher.html" class="btn btn-primary btn-block" style="margin-top: 40px ;"><span>See Details</span></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="img/RENT PRODUCT IMG/laptop2.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Infinity Intel LAPTOP</h5>
+                            <p class="card-text">i5 11th Gen series 14in FHD laptop</p>
+                            <div>
+                                <ul class="list-group">
+                                    <li class="list-group-item active">₱ 2,999 Down Payment</li>
+                                    <li class="list-group-item">₱ 1,099 Per Month</li>
+                                </ul>
+                            </div>
+                            <a href="Voucher.html" class="btn btn-primary btn-block" style="margin-top: 40px ;"><span>See Details</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- row -->
+            <div class="row mb-5 cstm-height-card">
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="img/RENT PRODUCT IMG/Monitor/m2.png" style="height: auto;" class="card-img-top" alt="viewsonic">
+                        <div class="card-body">
+                            <h5 class="card-title">VIEWSONIC MONITOR</h5>
+                            <p class="card-text">22inch FHD IPS Monitor Home and Office</p>
+                            <div>
+                                <ul class="list-group">
+                                    <li class="list-group-item active">₱ 2,999 Down Payment</li>
+                                    <li class="list-group-item">₱ 1,099 Per Month</li>
+                                </ul>
+                            </div>
+                            <a href="Voucher.html" class="btn btn-primary btn-block" style="margin-top: 40px ;"><span>See Details</span></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="img/RENT PRODUCT IMG/Monitor/m1.png" style="height: auto;" class="card-img-top" alt="npc">
+                        <div class="card-body">
+                            <h5 class="card-title">NPC MONITOR</h5>
+                            <p class="card-text">24 inch Bezelless FHD IPS LED monitor</p>
+                            <div>
+                                <ul class="list-group">
+                                    <li class="list-group-item active">₱ 2,999 Down Payment</li>
+                                    <li class="list-group-item">₱ 1,099 Per Month</li>
+                                </ul>
+                            </div>
+                            <a href="Voucher.html" class="btn btn-primary btn-block" style="margin-top: 40px ;"><span>See Details</span></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="img/RENT PRODUCT IMG/Monitor/m3.png" style="height: auto;" class="card-img-top" alt="asus">
+                        <div class="card-body">
+                            <h5 class="card-title">ASUS 22 inch FHD LED Monitor</h5>
+                            <p class="card-text">VS228H VH228D VS229H [ refurb ]</p>
+                            <div>
+                                <ul class="list-group">
+                                    <li class="list-group-item active">₱ 2,999 Down Payment</li>
+                                    <li class="list-group-item">₱ 1,099 Per Month</li>
+                                </ul>
+                            </div>
+                            <a href="Voucher.html" class="btn btn-primary btn-block" style="margin-top: 40px ;"><span>See Details</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                             <!-- row -->
+            <div class="row mb-5 cstm-height-card">
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="img/RENT PRODUCT IMG/SET/set1.png"  style="height: auto;" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">HP 280G2 MicroPower SET</h5>
+                            <p class="card-text">i5-6Gen desktop PC SET</p>
+                            <div>
+                                <ul class="list-group">
+                                    <li class="list-group-item active">₱ 2,999 Down Payment</li>
+                                    <li class="list-group-item">₱ 1,099 Per Month</li>
+                                </ul>
+                            </div>
+                            <br>
+                            <a href="Voucher.html" class="btn btn-primary btn-block"><span>See Details</span></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4" >
+                    <div class="card">
+                        <img src="img/RENT PRODUCT IMG/SET/set2.png" style="height: auto;" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Dell OptiPlex 3070 Tower SET</h5>
+                            <p class="card-text">i5-9Gen desktop PC SET</p>
+                            <div>
+                                <ul class="list-group">
+                                    <li class="list-group-item active">₱ 2,999 Down Payment</li>
+                                    <li class="list-group-item">₱ 1,099 Per Month</li>
+                                </ul>
+                            </div>
+                            <br>
+                            <a href="Voucher.html" class="btn btn-primary btn-block"><span>See Details</span></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="img/RENT PRODUCT IMG/SET/set3.png" style="height: auto;" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">LENOVO Thinkcentre M800 SET</h5>
+                            <p class="card-text">i5-6Gen SFF desktop PC</p>
+                            <div>
+                                <ul class="list-group">
+                                    <li class="list-group-item active">₱ 2,999 Down Payment</li>
+                                    <li class="list-group-item">₱ 1,099 Per Month</li>
+                                </ul>
+                            </div>
+                            <br>
+                            
+                            <a href="Voucher.html" class="btn btn-primary btn-block"><span>See Details</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+         </div>
+        </div>
+                
+           
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
