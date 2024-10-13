@@ -9,12 +9,14 @@
 
 <!-- Bootstrap CSS -->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-<link rel="stylesheet" href="css/Homestyle.css">
+
 <link rel="icon" type="image/x-icon" href="img/logo/image-removebg-preview (2).png">
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-
+<link rel="stylesheet" href="https://unpkg.com/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://unpkg.com/bs-brain@2.0.4/utilities/bsb-btn-size/bsb-btn-size.css">
+<link rel="stylesheet" href="https://unpkg.com/bs-brain@2.0.4/utilities/margin/margin.css">
+<link rel="stylesheet" href="https://unpkg.com/bs-brain@2.0.4/utilities/padding/padding.css">
 
 <!-- FONTS -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -26,109 +28,280 @@
 <!--NAVBAR-->
 <nav class="navbar navbar-expand-lg navbar bg-light">
 <div class="container justify-content-center">
-  <img src="img/logo/image-removebg-preview (2).png" class="navbar-brand" href="#" style="width: 3%; margin-right: 50px;">
+  <img src="img/logo/image-removebg-preview (2).png" class="navbar-brand" href="Homepage.html" style="width: 3%; margin-right: 50px;">
   <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
   <div class="collapse navbar-collapse flex-grow-0" id="navbarNavDropdown">
     <ul class="navbar-nav">
       <li class="nav-item">
-        <a class="nav-link active" aria-current="page" href="#" style="margin-right: 30px; color: #343434;">Home</a>
+        <a class="nav-link active" aria-current="page" href="Homepage.html" style="margin-right: 30px; color: #343434;">Home</a>
       </li>
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="margin-right: 30px; color: #343434;">
           Products
         </a>
         <ul class="dropdown-menu">
-          <li><a class="dropdown-item" href="#">Action</a></li>
-          <li><a class="dropdown-item" href="#">Another action</a></li>
-          <li><a class="dropdown-item" href="#">Something else here</a></li>
+          <li><a class="dropdown-item" href="RentProducts.html">Rent</a></li>
+          <li><a class="dropdown-item" href="OrderProducts.html">Purchase</a></li>
         </ul>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#" style="margin-right: 30px; color: #343434;">Build a PC</a>
+        <a class="nav-link" href="Services.html" style="margin-right: 30px; color: #343434;">Services</a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#" style="margin-right: 30px; color: #343434;">Services</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#" style="margin-right: 30px; color: #343434;">FAQ</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#" style="margin-right: 30px; color: #343434;">Contact</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#" style="margin-right: 30px; color: #343434;">About</a>
-      </li>
-     
     </ul>
   </div>
 </div>
 </nav>
 </head>
-<!--END OF NAVBAR-->
-</head>
-<body>
-    
-   <div class="container mt-5 mb-5">
-    <img src="img/CustomerINPUTIMG/bg.png" class="img-fluid" alt="..." style="height: 350px; width: 100%;">
-
-
-    <h4 class="mt-5" style="text-align: center;">INPUT YOUR DETAILS BELOW</h4>
-
-    <p class="mt-3" style="margin-left: 80px;">RenTech works with thousands of businesses each year to provide technology rentals around the world. </p>
-    <p style="margin-left: 80px;">A list of basic requirements to rent from us includes:</p>
-    <li style="margin-left: 80px;">Long Term- All Purchase receipts must be kept safe for warranty.</li>
-    <li style="margin-left: 80px;">Education - Student can also purchase.</li>
-   </div>
-
-   <div class="container mb-5">
-    <form class="form-control">
-        <h1 style="color: #0064AC; margin-top: 20px;">WHO WILL BE RENTING?</h1>
-        <input class="form-control me-2"  type="text" placeholder="Complete Name*:">
-        <div class="row">
-            <div class="col-xs-6 col-sm-6 col-md-6 mt-4">
-                <div class="form-group">
-        <input type="text" name="first_name" id="first_name" class="form-control input-sm" placeholder="Email*:">
-                </div>
-            </div>
-            <div class="col-xs-6 col-sm-6 col-md-6 mt-4">
-                <div class="form-group">
-                    <input type="text" name="last_name" id="last_name" class="form-control input-sm" placeholder="Phone*:">
-                </div>
-            </div>
-        </div>   
+<style>
   
-          <h1 style="color: #0064AC; margin-top: 20px;">WHAT IS YOUR ADDRESS?</h1>
+body::-webkit-scrollbar {
+    width: 0.8em;
+    }
+    
+    body::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    }
+    
+    body::-webkit-scrollbar-thumb {
+    background-color: dodgerblue;
+    border-radius: 10px;
+    }
 
-          <div class="row">
-            <div class="col-xs-4 col-sm-4 col-md-4 mt-4">
-                <div class="form-group">
-        <input type="text" name="first_name" id="first_name" class="form-control input-sm" placeholder="City*:">
-                </div>
-            </div>
-            <div class="col-xs-4 col-sm-4 col-md-4 mt-4">
-                <div class="form-group">
-                    <input type="text" name="last_name" id="last_name" class="form-control input-sm" placeholder="State/Province*:">
-                </div>
-            </div>
-            <div class="col-xs-4 col-sm-4 col-md-4 mt-4">
-                <div class="form-group">
-                    <input type="text" name="last_name" id="last_name" class="form-control input-sm" placeholder="Postal*:">
-                </div>
-        </div> 
-        <div class="col-md-12 text-center mt-5 mb-3">
-            <button type="submit" class="btn btn-primary" style="text-align: center;">SUBMIT</button>
-           </div>  
-           <small style="opacity: 0.6; text-align: center; margin-bottom: 20px;">By submitting, you permit us to contact you via phone, text, or email, even if on a “Do Not Call” list. Consent is not required for rental.</small>
+</style>
+<!--END OF NAVBAR-->
 
+<body>
+   <section class="py-4 py-md-5 py-xl-8 bg-light round">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-12">
+          <div class="container-fluid border border-dark bsb-tpl-bg-gradient-1x rounded">
+            <div class="row justify-content-md-center align-items-center">
+              <div class="col-12 col-md-11 col-xl-10">
+                <div class="page-header-wrapper py-3 py-md-5 py-xl-8">
+                  <h2 class="display-3 text-center fw-bold mb-3 mb-xl-4 lead">Buy a Business Technology From RenTech</h2>
+                  <p class="lead text-center m-0 d-flex justify-content-sm-center">
+                    <span class="col-12 col-sm-11 mb-4 lead fw-bold">RenTech works with thousands of businesses each year to provide technology rentals around the world.</span>                               
+                    <p class="lead" style="margin-left: 120px;">A list of basic requirements to Buy from us includes:</p>
+                    <div class="container">
+                    <p>           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-check-all" viewBox="0 0 16 16">
+                      <path d="M8.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L2.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093L8.95 4.992zm-.92 5.14.92.92a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 1 0-1.091-1.028L9.477 9.417l-.485-.486z" />
+                    </svg>Long Term- All Purchase receipts must be kept safe for warranty.</p>
+                    <p>           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-check-all" viewBox="0 0 16 16">
+                      <path d="M8.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L2.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093L8.95 4.992zm-.92 5.14.92.92a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 1 0-1.091-1.028L9.477 9.417l-.485-.486z" />
+                    </svg>Education - Student can also purchase.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+   <section class="py-3 py-md-5 py-xl-8 bg-white">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="card border border-dark rounded shadow-sm overflow-hidden">
+            <div class="card-body p-0">
+              <div class="row gy-3 gy-md-4 gy-lg-0">
+                <div class="col-12 col-lg-6 bsb-overlay background-position-center background-size-cover" style="--bsb-overlay-opacity: 0.7; background-image:  linear-gradient(45deg,
+                rgba(163, 72, 70, 0.75),
+                rgba(13, 63, 112, 0.75));">
+                  <div class="row align-items-lg-center justify-content-center h-100">
+                    <div class="col-11 col-xl-10">
+                      <div class="contact-info-wrapper py-4 py-xl-5">
+                        <h2 class="h1 mb-3 text-light mb-8">Get in touch</h2>
+                         <div class="d-flex mb-4 mb-xxl-5">
+                          <div class="me-4 text-primary">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-geo" viewBox="0 0 16 16">
+                              <path fill-rule="evenodd" d="M8 1a3 3 0 1 0 0 6 3 3 0 0 0 0-6zM4 4a4 4 0 1 1 4.5 3.969V13.5a.5.5 0 0 1-1 0V7.97A4 4 0 0 1 4 3.999zm2.493 8.574a.5.5 0 0 1-.411.575c-.712.118-1.28.295-1.655.493a1.319 1.319 0 0 0-.37.265.301.301 0 0 0-.057.09V14l.002.008a.147.147 0 0 0 .016.033.617.617 0 0 0 .145.15c.165.13.435.27.813.395.751.25 1.82.414 3.024.414s2.273-.163 3.024-.414c.378-.126.648-.265.813-.395a.619.619 0 0 0 .146-.15.148.148 0 0 0 .015-.033L12 14v-.004a.301.301 0 0 0-.057-.09 1.318 1.318 0 0 0-.37-.264c-.376-.198-.943-.375-1.655-.493a.5.5 0 1 1 .164-.986c.77.127 1.452.328 1.957.594C12.5 13 13 13.4 13 14c0 .426-.26.752-.544.977-.29.228-.68.413-1.116.558-.878.293-2.059.465-3.34.465-1.281 0-2.462-.172-3.34-.465-.436-.145-.826-.33-1.116-.558C3.26 14.752 3 14.426 3 14c0-.599.5-1 .961-1.243.505-.266 1.187-.467 1.957-.594a.5.5 0 0 1 .575.411z"></path>
+                            </svg>
+                          </div>
+                          <div>
+                            <h4 class="mb-3 text-light">Address</h4>
+                            <address class="mb-0 text-light opacity-75">I.T OUTLET, G-06 Skyrise1 Bldg., I. Villa St, Apas, Cebu City, 6000</address>
+                          </div>
+                        </div>
+                        <div class="row mb-4 mb-xxl-5">
+                          <div class="col-12 col-xxl-6">
+                            <div class="d-flex mb-4 mb-xxl-0">
+                              <div class="me-4 text-primary">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-telephone-outbound" viewBox="0 0 16 16">
+                                  <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511zM11 .5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-1 0V1.707l-4.146 4.147a.5.5 0 0 1-.708-.708L14.293 1H11.5a.5.5 0 0 1-.5-.5z"></path>
+                                </svg>
+                              </div>
+                              <div>
+                                <h4 class="mb-3 text-light">Phone</h4>
+                                <p class="mb-0">
+                                  <a class="link-light link-opacity-75 link-opacity-100-hover text-decoration-none" href="tel:0908 868 4115">0908 868 4115</a>
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-12 col-xxl-6">
+                            <div class="d-flex mb-0">
+                              <div class="me-4 text-primary">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-envelope-at" viewBox="0 0 16 16">
+                                  <path d="M2 2a2 2 0 0 0-2 2v8.01A2 2 0 0 0 2 14h5.5a.5.5 0 0 0 0-1H2a1 1 0 0 1-.966-.741l5.64-3.471L8 9.583l7-4.2V8.5a.5.5 0 0 0 1 0V4a2 2 0 0 0-2-2H2Zm3.708 6.208L1 11.105V5.383l4.708 2.825ZM1 4.217V4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v.217l-7 4.2-7-4.2Z"></path>
+                                  <path d="M14.247 14.269c1.01 0 1.587-.857 1.587-2.025v-.21C15.834 10.43 14.64 9 12.52 9h-.035C10.42 9 9 10.36 9 12.432v.214C9 14.82 10.438 16 12.358 16h.044c.594 0 1.018-.074 1.237-.175v-.73c-.245.11-.673.18-1.18.18h-.044c-1.334 0-2.571-.788-2.571-2.655v-.157c0-1.657 1.058-2.724 2.64-2.724h.04c1.535 0 2.484 1.05 2.484 2.326v.118c0 .975-.324 1.39-.639 1.39-.232 0-.41-.148-.41-.42v-2.19h-.906v.569h-.03c-.084-.298-.368-.63-.954-.63-.778 0-1.259.555-1.259 1.4v.528c0 .892.49 1.434 1.26 1.434.471 0 .896-.227 1.014-.643h.043c.118.42.617.648 1.12.648Zm-2.453-1.588v-.227c0-.546.227-.791.573-.791.297 0 .572.192.572.708v.367c0 .573-.253.744-.564.744-.354 0-.581-.215-.581-.8Z"></path>
+                                </svg>
+                              </div>
+                              <div>
+                                <h4 class="mb-3 text-light">E-Mail</h4>
+                                <p class="mb-0">
+                                  <a class="link-light link-opacity-75 link-opacity-100-hover text-decoration-none" href="mailto:sna.itoutlet@gmail.com">sna.itoutlet@gmail.com</a>
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="d-flex">
+                          <div class="me-4 text-primary">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-alarm" viewBox="0 0 16 16">
+                              <path d="M8.5 5.5a.5.5 0 0 0-1 0v3.362l-1.429 2.38a.5.5 0 1 0 .858.515l1.5-2.5A.5.5 0 0 0 8.5 9V5.5z"></path>
+                              <path d="M6.5 0a.5.5 0 0 0 0 1H7v1.07a7.001 7.001 0 0 0-3.273 12.474l-.602.602a.5.5 0 0 0 .707.708l.746-.746A6.97 6.97 0 0 0 8 16a6.97 6.97 0 0 0 3.422-.892l.746.746a.5.5 0 0 0 .707-.708l-.601-.602A7.001 7.001 0 0 0 9 2.07V1h.5a.5.5 0 0 0 0-1h-3zm1.038 3.018a6.093 6.093 0 0 1 .924 0 6 6 0 1 1-.924 0zM0 3.5c0 .753.333 1.429.86 1.887A8.035 8.035 0 0 1 4.387 1.86 2.5 2.5 0 0 0 0 3.5zM13.5 1c-.753 0-1.429.333-1.887.86a8.035 8.035 0 0 1 3.527 3.527A2.5 2.5 0 0 0 13.5 1z"></path>
+                            </svg>
+                          </div>
+                          <div>
+                            <h4 class="mb-3 text-light">Opening Hours</h4>
+                            <div class="d-flex mb-1">
+                              <p class="text-light fw-bold mb-0 me-5">Mon - Fri</p>
+                              <p class="text-light opacity-75 mb-0">9am - 8pm</p>
+                            </div>
+                            <div class="d-flex mb-1">
+                              <p class="text-light fw-bold mb-0 me-5">Sat</p>
+                              <p class="text-light opacity-75 mb-0">9am - 6pm</p>
+                            </div>
+                            <div class="d-flex">
+                              <p class="text-light fw-bold mb-0 me-5">Sun</p>
+                              <p class="text-light opacity-75 mb-0">Closed</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-lg-6">
+                  <div class="row align-items-lg-center h-100">
+                    <div class="col-12">
+                      <form action="#!">
+                        <div class="row gy-4 gy-xl-5 p-4 p-xl-5">
+                          <div class="col-12">
+                            <label for="fullname" class="form-label">Full Name <span class="text-danger">*</span></label>
+                            <input type="text" class="form-control" id="fullname" name="fullname" value="" required="">
+                          </div>
+                          <div class="col-12 col-md-6">
+                            <label for="email" class="form-label">Email <span class="text-danger">*</span></label>
+                            <div class="input-group">
+                              <span class="input-group-text">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
+                                  <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z"></path>
+                                </svg>
+                              </span>
+                              <input type="email" class="form-control" id="email" name="email" value="" required="">
+                            </div>
+                          </div>
+                          <div class="col-12 col-md-6">
+                            <label for="phone" class="form-label">Phone Number</label>
+                            <div class="input-group">
+                              <span class="input-group-text">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone" viewBox="0 0 16 16">
+                                  <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"></path>
+                                </svg>
+                              </span>
+                              <input type="tel" class="form-control" id="phone" name="phone" value="">
+                            </div>
+                          </div>
+                          <div class="col-12">
+                            <label for="Date Start" class="form-label">Pickup Date<span class="text-danger">*</span></label>
+                            <input type="text" class="form-control" id="Start" name="Start" value="" required="">
+                          </div>
+                          <div class="col-12">
+                            <label for="Address" class="form-label">Address <span class="text-danger">*</span></label>
+                            <textarea class="form-control" id="Address" name="Address" rows="3" required=""></textarea>
+                          </div>
+                          <div class="col-12">
+                            <div class="d-grid">
+                              <button class="btn btn-outline-primary btn-lg" type="submit" data-bs-toggle="modal" data-bs-target="#exampleModal">Send Message</button>
+                              <small class="mt-3 opacity-50">By submitting, you permit us to contact you via phone, text, or email, even if on a “Do Not Call” list. Consent is not required for rental.</small>
+                            </div>
+                          </div>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Button trigger modal -->
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered justify-content-center">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Your quote is being reviewed by our staff and manager. </h1>
+      </div>
+      <div class="modal-body">
+        <div class="card-body">
+          <p class="text-muted text-left"> We'll notify you as soon as your Quote have been reviewed in 1-3 business days. Thank you for your patience!</p>
+          <img src="https://i.imgur.com/F5hfOap.jpg" class="img-fluid" />
+      </div>
+      </div>
+      <div class="modal-footer">
+        <a href="Homepage.html" class="btn btn-primary">Close</a>
+      </div>
+    </div>
+  </div>
+</div>
     </form>
    </div>
-
-   
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+   <script type="text/javascript">
+    $(function() {
+        $('#datepicker').datepicker();
+    });
+</script>
+   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
-  
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
 </body>
+<div class="pb-4 pb-md-5">
+  <div class="container overflow-hidden">
+    <div class="row">
+      <div class="col">
+        <div class="container-fluid border border-dark">
+          <div class="row gy-4 gy-lg-0 p-3 p-md-4 p-xxl-5 align-items-md-center">
+            <div class="col-xs-12 col-sm-6 col-lg-4 order-0 order-lg-0">
+              <div class="footer-logo-wrapper text-center text-sm-start">
+                <a href="#!">
+                  <img src="img/logo/image-removebg-preview (2).png" alt="Presta Logo" width="65"  class="bsb-tpl-logo-footer">
+                </a>
+              </div>
+            </div>
+
+            <div class="col-xs-12 col-lg-4 order-2 order-lg-1">
+              <div class="colophon-wrapper">
+                <div class="footer-copyright-wrapper text-center">
+                  © 2024. All Rights Reserved.
+                </div>
+                <div class="credits text-secondary text-center mt-2 fs-8">
+                  Built by <a href="Team.html" class="link-secondary text-decoration-none">Team RenTech Developers</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 </html>
